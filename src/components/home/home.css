@@ -1,7 +1,56 @@
 .home{
+   display: flex;
+
+}
+
+.form{
     display: flex;
     flex-direction: column;
-    margin: 0px 20px 0px 20px;
     align-items: center ;
-    
+    width: 50%;
+    margin: 0px 0px 0px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background:rgb(255, 255, 255);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(51, 50, 50);
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.side{
+   width: 50%;
+   margin: 0px 20px 0px 0px;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-image: url('https://cdn5.vectorstock.com/i/1000x1000/13/19/abstract-blue-and-white-geometric-background-vector-14421319.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.side h1{
+    font-family: 'Ms Madi', cursive;
+    font-size: 40px;
+    margin: 0%;
+    padding: 0%;
+}
+.side p{
+    font-family: 'Ms Madi', cursive;
+}
+@media (max-width:700px) {
+    .form{width: 100%;}
+    .side{width: 0%;display: none;}
 }

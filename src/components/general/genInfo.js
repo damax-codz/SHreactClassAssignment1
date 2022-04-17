@@ -2,9 +2,9 @@ import React from 'react'
 import '../style.css'
 function GenInfo() {
   return (
-    <div style={{display:'flex',flexDirection:'column',margin:'0px 40px 20px 0px'}}>
+    <div className='general' >
     <h3>General </h3>
-    <div className='general'>
+    <div >
       <form>
         <label for='name'>name :</label>
         <input type='text' id='name' ></input>
